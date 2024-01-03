@@ -11,7 +11,7 @@ font-family: 'Poppins', sans-serif; */
     --font: "Poppins", sans-serif;
     font-family: "Poppins";
     --font-big: 5rem;
-    --font-medium: 2rem;
+    --font-medium: 4rem;
     --font-small: 0.8rem;
     --std-size: 10px;
     --small-size: 5px;
@@ -38,6 +38,57 @@ body {
   position: relative;
 }
 
+.bordered{
+    border-radius: 2rem;
+}
+
+.highlight{
+    color: var(--dark);
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.margin{
+    margin-left:50px;
+    margin-top: 50px;
+}
+
+.iconss{
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    padding: 1.45rem;
+    border-radius: 20px;
+    background-color: var(--mid);
+    margin-bottom: 10px;
+}
+
+#features{
+    background-color: #fff1b0;
+}
+
+.servicecard--heading{
+    font-size: 2em;
+}
+
+.card>img{
+    padding: 10px;
+}
+
+.bi-star-fill{
+    color: #ffdd53;
+}
+
+.black{
+    color: #4f4f4f;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 .hero-text {
     text-align: center;
@@ -67,6 +118,66 @@ body {
     color: var(--light);
   }
 
+.container,.jumbotron{
+    margin-top: 100px;
+}
+
+.list-group-item {
+   padding: 25px;
+     background-color: inherit; 
+   
+}
+
+.image__container{
+width: 50%;
+position: relative;
+height: 30rem;
+margin: 100px;
+}
+
+.circular__img1{
+box-sizing: border-box;
+width: 10rem;
+height: 10rem;
+object-fit: cover;
+border-radius: 50%;
+position: absolute;
+}
+
+.circular__img3
+{
+box-sizing: border-box;
+width: 15rem;
+height: 15rem;
+left: -10%;
+top: 40%;
+object-fit: cover;
+border-radius: 50%;
+position: absolute;
+}
+
+.circular__img2{
+    box-sizing: border-box;
+    width: 20rem;
+    height: 20rem;
+    left: 40%;
+    top: -10%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circular__img4{
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: 7.5rem;
+    bottom: 10%;
+    right: 32%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
 #changtext::after{
     content: 'Africa';
     font-style: italic;
@@ -75,6 +186,12 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: ease;
 }
+
+h1{
+    font-weight: bold;
+    font-size: var(--font-medium);
+}
+
 
 @keyframes changtextanim {
     20%  {content: 'France';}

@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400;600&family=Poppins:ital,wght@0,400;0,600;1,300;1,600&display=swap" rel="stylesheet">
+    <script src="./js/script.js" defer></script>
     <link href="./css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -77,6 +79,331 @@
             </div>
     </div>
 
+    <div class="container">
+        <h1>
+            Book Your <span class="highlight">Trip</span>
+        </h1>
+        <div class="row">
+            <div class="col-6">
+                <img src="https://source.unsplash.com/UJij-wz7w88" class="img-fluid bordered">
+            </div>
+            <div class="col-6">
+                <form class="booknowform needs-validation" novalidate>
+                    <div class="form-group">
+                      <label for="whereTo">Where to</label>
+                      <select class="custom-select" required>
+                        <option value="1">Germany</option>
+                        <option value="2">India</option>
+                        <option value="3">France</option>
+                        <option value="4">Africa</option>
+                      </select>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please provide a valid input.
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="people">How many people</label>
+                        <input type="number" class="form-control" id="people" min="1" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please provide a valid input.
+                          </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" class="form-control" id="startDate" min="today" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please provide a valid input.
+                          </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">End Date</label>
+                        <input type="date" class="form-control" id="endDate" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please provide a valid input.
+                          </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="desc">Description</label>
+                        <textarea  class="form-control" id="desc" minlength="50" maxlength="500" required></textarea>
+                        <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please provide a valid input.
+                          </div>
+                    </div>  
+                    <button type="submit" class="btn btn-warning">Book Now</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div>
+            <h1>Discover the touch of <span class="highlight">Nature</span></h1>
+        </div>
+
+
+        <div class="row">
+            <div class="col-3 margin">
+                <div class="card bordered" style="width: 20rem;">
+                    <img src="https://source.unsplash.com/IPlPkWPJ2fo" class="card-img-top bordered" alt="...">
+                    <div class="card-body">
+                        <h1>India</h1>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill black"></i>
+                    <i class="bi bi-star-fill black"></i>
+                    <div>
+                        Price : <b>$500</b>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 margin">
+                <div class="card bordered" style="width: 20rem;">
+                    <img src="https://source.unsplash.com/jNUTiYlPMHI" class="card-img-top bordered" alt="...">
+                    <div class="card-body">
+                        <h1>America</h1>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill black"></i>
+                    <div>
+                        Price : <b>$450</b>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 margin">
+                <div class="card bordered" style="width: 20rem;">
+                    <img src="https://source.unsplash.com/69qT-N3L5sc"  class="card-img-top bordered" alt="...">
+                    <div class="card-body">
+                        <h1>Egypt</h1>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <div>
+                        Price : <b>$500</b>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- second row -->
+
+        <div class="row">
+            <div class="col-3 margin">
+                <div class="card bordered" style="width: 20rem;">
+                    <img src="https://source.unsplash.com/kaoHI0iHJPM" class="card-img-top bordered" alt="...">
+                    <div class="card-body">
+                        <h1>Japan</h1>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill black"></i>
+                    <i class="bi bi-star-fill black"></i>
+                    <div>
+                        Price : <b>$500</b>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 margin">
+                <div class="card bordered" style="width: 20rem;">
+                    <img src="https://source.unsplash.com/rQti4ZKWJQk" class="card-img-top bordered" alt="...">
+                    <div class="card-body">
+                        <h1>China</h1>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill black"></i>
+                    <div>
+                        Price : <b>$450</b>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 margin">
+                <div class="card bordered" style="width: 20rem;">
+                    <img src="https://source.unsplash.com/VC7P8p6dFIc"  class="card-img-top bordered" alt="...">
+                    <div class="card-body">
+                        <h1>Srilanka</h1>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <div>
+                        Price : <b>$500</b>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+        <!-- end of second row -->
+
+        <!-- thrid row -->
+
+        <div class="row">
+            <div class="col-3 margin">
+                <div class="card bordered" style="width: 20rem;">
+                    <img src="https://source.unsplash.com/1oseksG0Ffs" class="card-img-top bordered" alt="...">
+                    <div class="card-body">
+                        <h1>Iraq</h1>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill "></i>
+                    <i class="bi bi-star-fill black"></i>
+                    <div>
+                        Price : <b>$500</b>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 margin">
+                <div class="card bordered" style="width: 20rem;">
+                    <img src="https://source.unsplash.com/XFEJPXUqbYc" class="card-img-top bordered" alt="...">
+                    <div class="card-body">
+                        <h1>UAE</h1>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <div>
+                        Price : <b>$5000</b>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 margin">
+                <div class="card bordered" style="width: 20rem;">
+                    <img src="https://source.unsplash.com/XxAR3uzYiZY"  class="card-img-top bordered" alt="...">
+                    <div class="card-body">
+                        <h1>London</h1>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill black"></i>
+                    <div>
+                        Price : <b>$4550</b>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-warning">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end of third row -->
+    </div>
+
+
+    <div class="jumbotron" id="features">
+        <div >
+            <h1>What <span class="highlight">servcies</span> we provide?</h1>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-6 d-flex justify-content-center">
+                <div class="image__container ">
+                    <img src="https://images.unsplash.com/photo-1553697388-94e804e2f0f6?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=765&amp;q=80" alt="Passport Image" class="circular__img1">
+                    <img src="https://i.pinimg.com/736x/c3/d3/3c/c3d33c9944f7bdbe8b83d932afe1a58a.jpg" alt="Surf Van Image" class="circular__img2">
+                    <img src="https://images.unsplash.com/photo-1579991155656-4647abc8d4b0?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80" alt="Airplane Image" class="circular__img3">
+                    <img src="https://images.unsplash.com/photo-1526918761918-da528d9558c5?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1076&amp;q=80" alt="Surfboard Image" class="circular__img4">
+                  </div>
+            </div>
+
+            <div class="col-6">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">    
+                        <h2>01. <b>Travel Plan</b></h2>
+                        Travel plans are not really an instrument themselves but a delivery mechanism or strategy for mostly others
+                    </li>
+                    <li class="list-group-item">    
+                        <h2>02. <b>Flight Booking</b></h2>
+                        Discover your next dream destination. Find deals on domestic and international flights    
+                    </li>
+                    <li class="list-group-item">    
+                        <h2>03. <b>Accomodation</b></h2>
+                        Lodging, food and services or travelling space and related services.
+                    </li>
+                    <li class="list-group-item">    
+                        <h2>04. <b>Language Locales</b></h2>
+                        A locale defines a user language and contains language and country related parameters. Many languages
+                    </li>
+                    <li class="list-group-item">    
+                        <h2>05. <b>Instant Itinerary</b></h2>
+                        Get a verifiable Flight and Hotel itinerary in less than 5 minutes for your next Visa travel application to the place
+                    </li>
+                  </ul>
+            </div>
+        </div>
+
+    </div>
 
     </body>
 </html>
