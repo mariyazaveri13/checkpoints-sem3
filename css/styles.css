@@ -65,7 +65,7 @@ body {
     margin-bottom: 10px;
 }
 
-#features{
+.jumbotron{
     background-color: #fff1b0;
 }
 
@@ -123,9 +123,18 @@ h1{
 }
 
 .list-group-item {
-   padding: 25px;
-     background-color: inherit; 
+   padding: 22px;
+    background-color: inherit; 
    
+}
+
+.socials{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #ffdd53;
+    padding: 7px;
+    margin: 0.4rem;
 }
 
 .image__container{
