@@ -14,7 +14,7 @@
             event.stopPropagation();
           }
           else{
-            alert('Booking Done!!')
+            alert('Response Saved!!')
             location.reload()
           }
           form.classList.add('was-validated');
