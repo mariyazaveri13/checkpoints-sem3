@@ -22,6 +22,7 @@ font-family: 'Poppins', sans-serif; */
 body {
     background: var(--light);
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar-brand{
@@ -52,9 +53,6 @@ body {
     color: var(--dark);
     font-size: var(--font-big);
     font-family: 'Poppins', sans-serif;
-    /* background: -webkit-linear-gradient( var(--light), var(--dark));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
   }
 
   .hero-text h3{
@@ -69,7 +67,7 @@ body {
     color: var(--light);
   }
 
-/* #changtext::after{
+#changtext::after{
     content: 'Africa';
     font-style: italic;
     animation-name: changtextanim;
@@ -84,7 +82,7 @@ body {
     60%  {content: 'Germany';}
     80%  {content: 'India';}
     100% {content: 'Africa';}
-  } */
+  }
 
   
   .Iam {
