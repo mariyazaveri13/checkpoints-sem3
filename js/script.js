@@ -85,11 +85,25 @@ window.onload = function(){
               <h1>${placeObj.place}</h1>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
+          ${ function makeStars(){
+            let stars = ''
+            for(let i=0;i<placeObj.rating;i++){
+              stars+=`<i class="bi bi-star-fill"></i> `
+            }
+            return stars
+            }()
+          }
+
+          ${
+            function makeBlackStars(){
+              let stars = ''
+              for(let i=0;i<5-placeObj.rating;i++){
+                stars+=`<i class="bi bi-star-fill black"></i> `
+              }
+              return stars
+            }()
+          }
+
           <div>
               Price : <b>${placeObj.price}</b>
           </div>

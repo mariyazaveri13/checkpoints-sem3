@@ -12,7 +12,7 @@ font-family: 'Poppins', sans-serif; */
     font-family: "Poppins";
     --font-big: 5rem;
     --font-medium: 4rem;
-    --font-small: 0.8rem;
+    --font-small: 2rem;
     --std-size: 10px;
     --small-size: 5px;
     --large-size: 20px;
@@ -70,7 +70,7 @@ body {
 }
 
 .servicecard--heading{
-    font-size: 2em;
+    font-size: var(--small-size);
 }
 
 .card>img{
